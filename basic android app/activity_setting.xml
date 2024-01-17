@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+
+    <Button
+        android:id="@+id/buttonBackToMain"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+
+        android:layout_margin="15dp"
+        android:layout_alignParentLeft="true"
+        android:text="@string/back_button" />
+
+    <TextView
+        android:id="@+id/SA_main_text"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@id/buttonBackToMain"
+        android:layout_alignTop="@+id/buttonBackToMain"
+        android:text="애플리캐이션 설정" />
+
+    <TextView
+        android:id="@+id/SA_text_imageView"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+
+        android:layout_margin="20dp"
+        android:layout_below="@id/buttonBackToMain"
+        android:text="이미지 뷰 설정" />
+
+    <Spinner
+        android:id="@+id/SA_spinner_imageView"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+
+        android:layout_marginLeft="200dp"
+        android:layout_below="@+id/SA_main_text"
+        android:layout_alignTop="@id/SA_text_imageView"
+        android:prompt="@string/test" />
+
+    <TextView
+        android:id="@+id/SA_text_gridcolumn"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+
+        android:layout_margin="20dp"
+        android:layout_below="@id/SA_text_imageView"
+        android:text="그리드 뷰 열 수 설정" />
+
+    <Spinner
+        android:id="@+id/SA_spinner_gridcolumn"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+
+        android:layout_marginLeft="200dp"
+        android:layout_below="@+id/SA_main_text"
+        android:layout_alignTop="@id/SA_text_gridcolumn"
+        android:prompt="@string/test" />
+
+    <TextView
+        android:id="@+id/SA_text_textsize"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+
+        android:layout_margin="20dp"
+        android:layout_below="@id/SA_text_gridcolumn"
+        android:text="글씨 크기 설정" />
+
+    <Spinner
+        android:id="@+id/SA_spinner_textsize"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+
+        android:layout_marginLeft="200dp"
+        android:layout_below="@+id/SA_main_text"
+        android:layout_alignTop="@id/SA_text_textsize"
+        android:prompt="@string/test" />
+
+</RelativeLayout>

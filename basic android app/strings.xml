@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">Final-app</string>
+    <string name="test">Test</string>
+
+    <string name="back_button">돌아가기</string>
+
+
+    <string-array name="set_imageView">
+        <item>리스트뷰(기본)</item>
+        <item>그리드뷰</item>
+    </string-array>
+
+    <string-array name="set_gridcolumn">
+        <item>4(기본)</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="set_textsize">
+        <item>14sp(기본)</item>
+        <item>15sp</item>
+        <item>16sp</item>
+        <item>18sp</item>
+        <item>21sp</item>
+    </string-array>
+
+    <string-array name="name_english">
+        <item>Underwater Waterfall</item>
+        <item>Darvaza Gas Crater</item>
+        <item>Fly Geyser</item>
+        <item>Glass Beach</item>
+        <item>Sea Sparkle</item>
+        <item>Grand Canyon</item>
+        <item>Grand Prismatic Spring</item>
+        <item>Great Barrier Reef</item>
+        <item>Ha Long Bay</item>
+        <item>Hyams Beach</item>
+        <item>Lake Retba</item>
+        <item>Richat structure</item>
+        <item>Rio Tinto River</item>
+        <item>Mount Roraima</item>
+        <item>Salar De Uyuni</item>
+        <item>Spotted Lake</item>
+    </string-array>
+
+    <string-array name="name_korean">
+        <item>수중 폭포</item>
+        <item>지옥으로 가는 문</item>
+        <item>하늘 간혈천</item>
+        <item>유리 해변</item>
+        <item>발광 해변</item>
+        <item>그랜드 캐년(대협곡)</item>
+        <item>그랜드 프리즈매틱 스프링</item>
+        <item>대보초</item>
+        <item>할롱만</item>
+        <item>하이엄스 해변</item>
+        <item>레트바 호수</item>
+        <item>리차트 구조</item>
+        <item>붉은 강</item>
+        <item>호라이마 산</item>
+        <item>유우니 소금 사막</item>
+        <item>점박이 호수</item>
+    </string-array>
+
+    <string-array name="country">
+        <item>모리셔스</item>
+        <item>투르크메니스탄</item>
+        <item>미국</item>
+        <item>미국</item>
+        <item>전세계</item>
+        <item>미국</item>
+        <item>미국</item>
+        <item>호주</item>
+        <item>베트남</item>
+        <item>호주</item>
+        <item>세네갈</item>
+        <item>모리타니</item>
+        <item>스페인</item>
+        <item>브라질</item>
+        <item>볼리비아</item>
+        <item>캐나다</item>
+    </string-array>
+
+    <string-array name="location">
+        <item>-20.47357986034712, 57.31475046273126</item>
+        <item>40.252619455944334, 58.439700398020385</item>
+        <item>40.85943243692193, -119.33190000196072</item>
+        <item>39.45267535365975, -123.81357903269719</item>
+
+        <item>-0.6111442252431621, 73.10204844568781</item>
+        <item>36.12882642164751, -112.22529794349198</item>
+        <item>44.52509868099888, -110.83819061718816</item>
+        <item>-19.09238173777674, 148.62155663039377</item>
+
+        <item>20.90692411589568, 107.1825765059955</item>
+        <item>-35.103126362758104, 150.6934356115296</item>
+        <item>14.838492392280058, -17.234062317231388</item>
+        <item>21.126924130980886, -11.401658224042652</item>
+
+        <item>37.62788271212085, -6.536043621506256</item>
+        <item>5.133709903617959, -60.75876085071344</item>
+        <item>-20.139033869126056, -67.63613026422841</item>
+        <item>49.07789305023392, -119.56678919772213</item>
+    </string-array>
+
+</resources>

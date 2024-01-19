@@ -1,0 +1,361 @@
+/*		gallery style_sheet css3		*/
+
+/****************************************** html-tag css ******************************************/
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+
+
+}
+
+div > p {
+	text-align: left;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+/****************************************** page div css ******************************************/
+
+div#Wrap {
+	margin: 0 auto; /* maybe unworkable (uncertain)*/
+	overflow: hidden;
+    min-width: 1200px; /* increase if need/ has some bug:width scroll bug */
+
+
+	/* test :: below property must delete or inactive when web release */
+	background-color: skyblue;
+}
+
+/****************************************** top nav css ******************************************/
+
+div#headnav {
+	position: fixed;
+	left: 0;
+	top: 0;
+
+	width: 100%;
+	height: 60px;
+
+	color: white;
+	text-align: center;
+	line-height: 60px;
+	font-size: 30px;
+
+	background-color: black;
+}
+
+div#menubutton {
+	width: 15%;
+	height: 100%;
+
+	float: left;
+
+	background-color: black;
+	border-right: solid black;
+
+	transition-duration: .5s;
+}
+
+#menubutton:hover {
+	color: black;
+	background-color: white;
+	border-right: solid green;
+}
+
+/* actually not visible */
+div#pagehead {
+	width: 100%;
+	height: 50px;
+
+	color: white;
+	line-height: 50px;
+
+	background-color: lightgray;
+}
+
+.navcenter {
+	float: left;
+	display: table;
+
+	width: 40%;
+	height: 100%;
+
+	background-color: black;
+}
+
+.navitem {
+	display: table-cell;
+	border-left: solid black;
+
+	transition-duration: .5s;
+}
+.navitem:last-child {
+	display: table-cell;
+	border-right: solid black;
+}
+.navitem:hover {
+	color: black;
+	border-left: solid green;
+	background-color: white;
+}
+.navitem:hover:last-child {
+	color: black;
+	border-left: solid green;
+	background-color: white;
+}
+
+/****************************************** side menu css ******************************************/
+
+div#sidemenu {
+	position: fixed;
+	left: -300px;
+	top: 0;
+
+	width: 300px;
+	height: 100%;
+
+	background-color: #333;
+
+	transition-duration: .3s;
+}
+
+/* modify or delete if back button replace checkbox by div <- final decision::status quo */
+div#menuback {
+	float: left;
+
+	width: 100%;
+	height: 60px;
+
+	font-size: 30px;
+	line-height: 60px;
+	text-align: center;
+	color: white;
+	margin-bottom: 10px;
+
+	background-color: black;
+
+	transition-duration: .5s;
+}
+
+#menuback:hover {
+	font-size: 33px;
+	color: black;
+	background-color: white;
+}
+
+.menubox {
+	width: 280px;
+	height: 60px;
+
+	margin: 10px;
+	border-radius: 10px;
+
+	font-size: 20px;
+	line-height: 60px;
+	color: white;
+	text-align: center;
+
+
+	background-color: black;
+}
+
+/****************************************** page div css ******************************************/
+
+div#pagemain {
+	width: 100%;
+
+	color: white;
+	line-height: 30px;
+
+	background-color: black;
+}
+
+div#pagefoot {
+	width: 100%;
+	height: 200px;
+
+	color: white;
+	line-height: 50px;
+
+	background-color: #333;
+}
+
+/* black box must modify in .html inline style */
+/* width box */
+.pagebox1 {
+	width: 100%;
+	height: 10%;
+
+	color: black;
+
+	clear: both;
+}
+/* height box */
+.pagebox2 {
+	float: left;
+	width: 10%;
+	height: 80%;
+}
+
+/****************************************** page1 css ******************************************/
+.page1 {
+	width: 100%;
+	height: 600px;
+
+	color: black;
+	text-align: center;
+
+	background-color: lightgray;
+}
+
+#r-btn {
+	width: 100%;
+	height: 100%;
+
+	color: black;
+	font-size: 60px;
+	line-height: 80px;
+
+	background-color: white;
+	border: 3px solid black;
+
+	transition-duration: 1s;
+}
+
+#l-btn {
+	width: 100%;
+	height: 100%;
+
+	color: black;
+	font-size: 60px;
+	line-height: 80px;
+
+	background-color: white;
+	border: 3px solid black;
+
+	transition-duration: 1s;
+}
+
+#r-btn:hover {
+	border: 3px solid black;
+	border-radius: 30px;
+	background-color: black;
+
+	color: white;
+	font-weight: bold;
+	font-size: 70px;
+}
+
+#l-btn:hover {
+	border: 3px solid black;
+	border-radius: 30px;
+	background-color: black;
+
+	color: white;
+	font-weight: bold;
+	font-size: 70px;
+}
+
+#mainimgleft {
+	box-shadow: -10px -20px 1px gray;
+}
+#mainimgcenter {
+	box-shadow: 0px -30px 1px gray;
+}
+#mainimgright {
+	box-shadow: 10px -20px 1px gray;
+}
+
+/****************************************** page2 css ******************************************/
+.page2 {
+	width: 100%;
+	height: 2000px;
+
+	color: black;
+	text-align: center;
+
+	background-color: white;
+}
+
+.imgbox {
+	width: 18%;
+	height: 90%;
+
+	float: left;
+	overflow: hidden;
+	border-radius: 20px;
+
+	background-color: #daffcc;
+
+	transition-duration: 2s;
+}
+
+.imgbox > .boximg {
+	width: 100%;
+	height: 40%;
+}
+
+.imgbox > .boxtext {
+	width: 100%;
+	height: 60%;
+}
+
+.boxtext > p {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.imgbox:hover {
+	box-shadow: 10px 10px 1px lightgray;
+	font-size: 110%;
+	font-weight: bold;
+}
+/****************************************** page2 css ******************************************/
+.page3 {
+	width: 100%;
+	height: 1000px;
+
+	color: black;
+	text-align: center;
+
+	border-top: 5px dashed gray;
+
+	background-color: white;
+}
+
+table {
+	width: 100%;
+
+	transition-duration: 1s;
+}
+
+td {
+	border: 1px solid white;
+	border-bottom: 1px solid black;
+	transition-duration: 1s;
+}
+
+th {
+	border-bottom: 2px solid black;
+	transition-duration: 1s;
+}
+
+tr:hover {
+	background-color: #daffcc;
+}
+td:hover {
+	border: 1px dashed;
+	font-weight: bold;
+	font-size: 120%;
+	background-color: #faffcc;
+}
+
+/****************************************** uncategorized css ******************************************/

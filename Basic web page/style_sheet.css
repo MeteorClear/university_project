@@ -1,0 +1,342 @@
+/*		main style_sheet css3		*/
+
+/****************************************** html-tag css ******************************************/
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
+
+img {
+	width: 100%;
+	height: 200px;
+
+}
+
+div > p {
+	text-align: left;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+/****************************************** page div css ******************************************/
+
+div#Wrap {
+	margin: 0 auto; /* maybe unworkable (uncertain)*/
+	overflow: hidden;
+    min-width: 1200px; /* increase if need/ has some bug:width scroll bug */
+
+
+	/* test :: below property must delete or inactive when web release */
+	background-color: skyblue;
+}
+
+/****************************************** top nav css ******************************************/
+
+div#headnav {
+	position: fixed;
+	left: 0;
+	top: 0;
+
+	width: 100%;
+	height: 60px;
+
+	color: white;
+	text-align: center;
+	line-height: 60px;
+	font-size: 30px;
+
+	background-color: black;
+}
+
+div#menubutton {
+	width: 15%;
+	height: 100%;
+
+	float: left;
+
+	background-color: black;
+	border-right: solid black;
+
+	transition-duration: .5s;
+}
+
+#menubutton:hover {
+	color: black;
+	background-color: white;
+	border-right: solid green;
+}
+
+/* actually not visible */
+div#pagehead {
+	width: 100%;
+	height: 50px;
+
+	color: white;
+	line-height: 50px;
+
+	background-color: lightgray;
+}
+
+.navcenter {
+	float: left;
+	display: table;
+
+	width: 40%;
+	height: 100%;
+
+	background-color: black;
+}
+
+.navitem {
+	display: table-cell;
+	border-left: solid black;
+
+	transition-duration: .5s;
+}
+.navitem:last-child {
+	display: table-cell;
+	border-right: solid black;
+}
+.navitem:hover {
+	color: black;
+	border-left: solid green;
+	background-color: white;
+}
+.navitem:hover:last-child {
+	color: black;
+	border-left: solid green;
+	background-color: white;
+}
+
+#nickname {
+
+}
+
+/****************************************** side menu css ******************************************/
+
+div#sidemenu {
+	position: fixed;
+	left: -300px;
+	top: 0;
+
+	width: 300px;
+	height: 100%;
+
+	background-color: #333;
+
+	transition-duration: .3s;
+}
+
+/* modify or delete if back button replace checkbox by div <- final decision::status quo */
+div#menuback {
+	float: left;
+
+	width: 100%;
+	height: 60px;
+
+	font-size: 30px;
+	line-height: 60px;
+	text-align: center;
+	color: white;
+	margin-bottom: 10px;
+
+	background-color: black;
+
+	transition-duration: .5s;
+}
+
+#menuback:hover {
+	font-size: 33px;
+	color: black;
+	background-color: white;
+}
+
+.menubox {
+	width: 280px;
+	height: 60px;
+
+	margin: 10px;
+	border-radius: 10px;
+
+	font-size: 20px;
+	line-height: 60px;
+	color: white;
+	text-align: center;
+
+
+	background-color: black;
+}
+
+#menubox2 {
+	width: 20px;
+	height: 20px;
+
+	margin: 10px;
+	border-radius: 10px;
+
+	font-size: 0px;
+	color: white;
+	text-align: center;
+
+	transition-duration: 2s;
+	background-color: black;
+}
+
+#nickinput {
+	width: 1px;
+	height: 1px;
+	margin: 20px;
+	margin-bottom: 10px;
+
+	background-color: black;
+	border: 1px solid white;
+
+	visibility: hidden;
+	transition-duration: 2s;
+}
+#nicksubmit {
+	width: 1px;
+	height: 1px;
+	margin: 20px;
+	margin-top: 10px;
+
+	background-color: black;
+	border: 1px solid white;
+	color: white;
+	font-weight: bold;
+
+	visibility: hidden;
+	transition-duration: 2s;
+}
+
+/****************************************** page div css ******************************************/
+
+div#pagemain {
+	width: 100%;
+
+	color: white;
+	line-height: 30px;
+
+	background-color: black;
+}
+
+div#pagefoot {
+	width: 100%;
+	height: 200px;
+
+	color: white;
+	line-height: 50px;
+
+	background-color: #333;
+}
+
+/* black box must modify in .html style */
+/* width box */
+.pagebox1 {
+	width: 100%;
+	height: 10%;
+
+	color: black;
+
+	clear: both;
+}
+/* height box */
+.pagebox2 {
+	float: left;
+	width: 10%;
+	height: 80%;
+}
+
+/****************************************** page1 css ******************************************/
+
+.page1 {
+	height: 800px;
+
+	overflow: hidden;
+	justify-content: center;
+	align-content: center;
+
+	background-image: url('images/main1.jpg');
+	background-size: cover;
+}
+
+/* erase it if dont have idea */
+.page1:hover {
+	
+}
+
+
+/****************************************** page2 css ******************************************/
+
+/* height can be changed */
+#page2 {
+	height: 800px;
+
+	text-align: center;
+
+	transition-property: all;
+	transition-duration: 2s;
+
+	background-color: black;
+}
+/* can see that it's not black color, ex)button, remember */
+/* this part exterminated
+#page2:hover {
+	border-top: solid green;
+	border-bottom: solid green;
+	background-color: white;
+}
+*/
+
+.imgbox {
+	float: left;
+	width: 100%;
+	height: 100%;
+
+	display: table;
+	table-layout: fixed;
+
+}
+
+.imgboxitem {
+	color: black;
+	display: table-cell;
+	border-radius: 10px;
+	padding: 10px;
+
+	transition-property: all;
+	transition-duration: 2s;
+}
+
+/* height box unworked, odd number work only, change it if there is alternative */
+.imgboxitem:nth-child(2n+1):hover {
+	color: black;
+	font-size: 110%;
+	text-shadow: 4px 4px 0px #bdbdbd;
+	background-color: #daffcc;
+}
+
+#page-btn {
+	width: 160px;
+	height: 40px;
+	margin-top: 1em;
+
+	color: black;
+	background-color: white;
+
+	border: 2px solid green;
+
+	transition-duration: 2s;
+}
+
+#page-btn:hover {
+	color: white;
+	font-size: 110%;
+	border-radius: 20px;
+	background-color: black;
+}
+
+/****************************************** uncategorized css ******************************************/

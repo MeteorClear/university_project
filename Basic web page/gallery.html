@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+	<!---------- head 부분 ---------->
+	<head>
+		<title>Gallery Wep Programming F_pj</title>
+		<meta charset="utf-8">
+
+		<!---------- stylesheet ---------->
+		<link rel="stylesheet" type="text/css" href="style_sheet_gallery.css">
+
+		<!---------- javascript ---------->
+		<script src="Script_gallery.js"></script>
+	</head>
+
+	<!---------- body 부분 ---------->
+	<body onload="init()">
+		<div id="Wrap">
+			<a name="mainstart"></a>
+			<!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--* top nav start *--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+			<header>
+				<div id="headnav">
+					<!---------- 사이드 메뉴 버튼 ---------->
+					<div id="menubutton">
+						Menu
+					</div>
+					<div style="float: left; width: 15%; height: 100%;"></div>
+					<nav>
+						<div class="navcenter">
+							<!---------- 상단 네비게이션 페이지 이동 버튼 ---------->
+							<div class="navitem" id="moveintro">Intro</div>
+							<div class="navitem" id="movegallery">Gallery</div>
+						</div>
+					</nav>
+					<div style="float: left; width: 30%; height: 100%;"></div>
+
+				</div>
+				<div style="width: 100%; height: 60px;"></div>
+			</header>
+			<!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--* page main start *--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+			<section>
+				<div id="pagemain">
+					<!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--* page1 start *--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+					<article>
+						<a name="page1start"></a>
+						<div class="page1">
+							<div class="pagebox1"></div>
+							<div class="pagebox2" style="width: 100%">
+								<div class="pagebox2" style="height: 100%; width: 5%"></div>
+
+								<!---------- 좌측 버튼 박스 ---------->
+								<div class="pagebox2" style="height: 100%">
+									<div class="pagebox1" style="height: 40%"></div>
+									<div class="pagebox1" style="height: 20%">
+										<!---------- 좌측 클릭 버튼 ---------->
+										<div id="l-btn">&lt</div>
+									</div>
+									<div class="pagebox1" style="height: 40%"></div>
+								</div>
+
+								<!---------- 좌측 이미지 박스 ---------->
+								<div class="pagebox2" style="height: 100%; width: 20%">
+									<div class="pagebox1" style="height: 25%"></div>
+									<div class="pagebox1" style="height: 50%">
+										<div class="pagebox2" style="height: 100%; width: 5%"></div>
+										<div class="pagebox2" style="height: 100%; width: 90%">
+											<!---------- 좌측 이미지 ---------->
+											<img src="images/temp.png" id="mainimgleft">
+										</div>
+										<div class="pagebox2" style="height: 100%; width: 5%"></div>
+									</div>
+									<div class="pagebox1" style="height: 25%"></div>
+								</div>
+
+								<!---------- 중앙 이미지 박스 ---------->
+								<div class="pagebox2" style="height: 100%; width: 30%">
+									<div class="pagebox1"></div>
+									<div class="pagebox1"></div>
+									<div class="pagebox1" style="height: 60%">
+										<!---------- 중앙 이미지 ---------->
+										<img src="images/temp.png" id="mainimgcenter">
+									</div>
+									<div class="pagebox1"></div>
+									<div class="pagebox1"></div>
+								</div>
+
+								<!---------- 우측 이미지 박스 ---------->
+								<div class="pagebox2" style="height: 100%; width: 20%">
+									<div class="pagebox1" style="height: 25%"></div>
+									<div class="pagebox1" style="height: 50%">
+										<div class="pagebox2" style="height: 100%; width: 5%"></div>
+										<div class="pagebox2" style="height: 100%; width: 90%">
+											<!---------- 우측 이미지 ---------->
+											<img src="images/temp.png" id="mainimgright">
+										</div>
+										<div class="pagebox2" style="height: 100%; width: 5%"></div>
+									</div>
+									<div class="pagebox1" style="height: 25%"></div>
+								</div>
+
+								<!---------- 우측 버튼 박스 ---------->
+								<div class="pagebox2" style="height: 100%">
+									<div class="pagebox1" style="height: 40%"></div>
+									<div class="pagebox1" style="height: 20%">
+										<!---------- 우측 클릭 버튼 ---------->
+										<div id="r-btn">&gt</div>
+									</div>
+									<div class="pagebox1" style="height: 40%"></div>
+								</div>
+
+								<div class="pagebox2" style="height: 100%; width: 5%"></div>
+							</div>
+							<div class="pagebox1"></div>
+						</div>
+					</article>
+					<!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--* page2 start *--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+					<article>
+						<div class="page2">
+							<div class="pagebox1" style="height: 5%"></div>
+							<div class="pagebox1" style="height: 90%;">
+								<div class="pagebox1" style="height: 25%">
+									<!---------- 이미지, 텍스트, 한행당 4개 4열 총 16개 ---------->
+									<!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--* row1 start *--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+									<a name="page2row1start"></a>
+									<div class="pagebox1"></div>
+									<div class="pagebox2" style="height: 90%; width: 5%;"></div>
+
+									<div class="imgbox">
+										<div class="boximg">
+											<img src="images/gallery_images/Darvaza.jpg">
+										</div>
+										<div class="boxtext">
+											<h2>1. Darvaza</h2>
+											<p>다르바자 혹은 지옥으로 가는 문은 투르크메니스탄 아할 주 다르바자에 있는 천연가스전입니다.</p>
+										</div>
+									</div>
+
+									<div class="pagebox2" style="height: 90%; width: 6%"></div>
+
+									<div class="imgbox">
+										<div class="boximg">
+											<img src="images/gallery_images/Fly Geyser.png">
+										</div>
+										<div class="boxtext">
+											<h2>2. Fly Geyser</h2>
+											<p>하늘 간헐천에는 습하고 더운 환경에서 번성하는 녹색과 빨간색의 여러 가지 빛깔을 띠는 호 열성 조류가 바위에 서식합니다.</p>
+										</div>
+									</div>
+
+									<div class="pagebox2" style="height: 90%; width: 6%"></div>
+
+									<div class="imgbox">
+										<div class="boximg">
+											<img src="images/gallery_images/glass beach.jpg">
+										</div>
+										<div class="boxtext">
+											<h2>3. Glass beach</h2>
+											<p>유리 해변은 수십톤에 달하는 쓰래기들이 수십년에 걸쳐 마모된 조각들로 이루어진 해변입니다.</p>
+										</div>
+									</div>
+									<div class="pagebox2" style="height: 90%; width: 6%"></div>
+
+									<div class="imgbox">
+										<div class="boximg">
+											<img src="images/gallery_images/Grand Canyon.jpg">
+										</div>
+										<div class="boxtext">
+											<h2>4. Grand Canyon</h2>
+											<p>그랜드 캐년 또는 대협곡은 고원지대를 흐르는 콜로라도 강에 의해서 깎인 거대한 계곡입니다.</p>
+										</div>
+									</div>
+
+									<div class="pagebox2" style="height: 90%; width: 5%;"></div>
+								</div>
+								<!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--* row2 start *--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+								<a name="page2row2start"></a>
+								<div class="pagebox1" style="height: 25%">
+									<div class="pagebox1"></div>
+									<div class="pagebox2" style="height: 90%; width: 5%;"></div>
+
+									<div class="imgbox">
+										<div class="boximg">
+											<img src="images/gallery_images/Grand Prismatic Spring.jpg">
+										</div>
+										<div class="boxtext">
+											<h2>5. Grand Prismatic Spring</h2>
+											<p>그랜드 프리즈매틱 스프링의 그 색채는 광학 프리즘에 의한 백색광에서 무지개 색깔의 분산을 연상시킵니다.</p>
+										</div>
+									</div>
+
+									<div class="pagebox2" style="height: 90%; width: 6%"></div>
+
+									<div class="imgbox">
+										<div class="boximg">
+											<img src="images/gallery_images/Great Barrier Reef.jpg">
+										</div>
+										<div class="boxtext">
+											<h2>6. Great Barrier Reef</h2>
+											<p>그레이트배리어리프 또는 대보초는 오스트레일리아 북동부에 위치한 세계 최대의 산호초 지대입니다.</p>
+										</div>
+									</div>
+
+									<div class="pagebox2" style="height: 90%; width: 6%"></div>
+
+									<div class="imgbox">
+										<div class="boximg">
+											<img src="images/gallery_images/Ha Long Bay.jpg">
+										</div>
+										<div class="boxtext">
+											<h2>7. Ha Long Bay</h2>
+											<p>할롱만은 베트남 북부, 꽝닌 성 통킹만 북서부에 있는 만의 명칭이며, 크고 작은 3,000개의 기암괴석과 섬들이 존재합니다.</p>
+										</div>
+									</div>
+									<div class="pagebox2" style="height: 90%; width: 6%"></div>
+
+									<div class="imgbox">
+										<div class="boximg">
+											<img src="images/gallery_images/Hyams Beach.jpg">
+										</div>
+										<div class="boxtext">
+											<h2>8. Hyams Beach</h2>
+											<p>하이엄스 해변은 호주에 있는 해변으로, 세계에서 가장 하얀 모래가 존재하는 곳 입니다.</p>
+										</div>
+									</div>
+
+									<div class="pagebox2" style="height: 90%; width: 5%;"></div>
+								</div>
+								<!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--* row3 start *--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+								<a name="page2row3start"></a>
+								<div class="pagebox1" style="height: 25%">
+									<div class="pagebox1"></div>
+									<div class="pagebox2" style="height: 90%; width: 5%;"></div>
+
+									<div class="imgbox">
+										<div class="boximg">
+											<img src="images/gallery_images/Lake Retba.jpg">
+										</div>
+										<div class="boxtext">
+											<h2>9. Lake Retba</h2>
+											<p>레트바 호수 또는 분홍 호수는 미생물에 의해 분홍빛을 띄는 소금 호수입니다.</p>
+										</div>
+									</div>
+
+									<div class="pagebox2" style="height: 90%; width: 6%"></div>
+
+									<div class="imgbox">
+										<div class="boximg">
+											<img src="images/gallery_images/mauritius.jpeg">
+										</div>
+										<div class="boxtext">
+											<h2>10. Underwater waterfall</h2>
+											<p>해저 폭포는 모리셔스에 존재하는 곳으로 그 크기 때문에 항공기를 통해서만 관찰 할 수 있습니다.</p>
+										</div>
+									</div>
+
+									<div class="pagebox2" style="height: 90%; width: 6%"></div>
+
+									<div class="imgbox">
+										<div class="boximg">
+											<img src="images/gallery_images/Richat Structure.jpg">
+										</div>
+										<div class="boxtext">
+											<h2>11. Richat Structure</h2>
+											<p>리차트 구조는 그 형상 때문에 아프리카의 눈으로 불립니다. 아직 이곳이 왜 생성됬는지는 알 수 없습니다.</p>
+										</div>
+									</div>
+									<div class="pagebox2" style="height: 90%; width: 6%"></div>
+
+									<div class="imgbox">
+										<div class="boximg">
+											<img src="images/gallery_images/Rio Tinto.jpg">
+										</div>
+										<div class="boxtext">
+											<h2>12. Rio Tinto</h2>
+											<p>리오 틴토 강은 대량의 중금속이 포함된 강산성의 강입니다. 이러한 화학적 특성으로 강은 붉은 빛을 가집니다.</p>
+										</div>
+									</div>
+
+									<div class="pagebox2" style="height: 90%; width: 5%;"></div>
+								</div>
+								<!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--* row4 start *--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+								<a name="page2row4start"></a>
+								<div class="pagebox1" style="height: 25%">
+									<div class="pagebox1"></div>
+									<div class="pagebox2" style="height: 90%; width: 5%;"></div>
+
+									<div class="imgbox">
+										<div class="boximg">
+											<img src="images/gallery_images/Roraima.jpg">
+										</div>
+										<div class="boxtext">
+											<h2>13. Roraima</h2>
+											<p>호라이마 산은 탁상형 평원을 가진 암석형 산입니다. 그 크기는 세 국가의 국경을 접하고 있습니다.</p>
+										</div>
+									</div>
+
+									<div class="pagebox2" style="height: 90%; width: 6%"></div>
+
+									<div class="imgbox">
+										<div class="boximg">
+											<img src="images/gallery_images/Salar de Uyuni.jpg">
+										</div>
+										<div class="boxtext">
+											<h2>14. Salar de Uyuni</h2>
+											<p>유우니 소금 사막은 세계에서 가장 큰 소금 사막입니다. 비가 오면 지면이 거울처험 반사합니다.</p>
+										</div>
+									</div>
+
+									<div class="pagebox2" style="height: 90%; width: 6%"></div>
+
+									<div class="imgbox">
+										<div class="boximg">
+											<img src="images/gallery_images/sea sparkle.png">
+										</div>
+										<div class="boxtext">
+											<h2>15. Sea sparkle</h2>
+											<p>발광 해변은 야광성을 띄는 플랑크톤에 의해 발생합니다. 많은 국가들에서 이 현상이 관측됩니다.</p>
+										</div>
+									</div>
+									<div class="pagebox2" style="height: 90%; width: 6%"></div>
+
+									<div class="imgbox">
+										<div class="boximg">
+											<img src="images/gallery_images/Spotted Lake.jpg">
+										</div>
+										<div class="boxtext">
+											<h2>16. Spotted Lake</h2>
+											<p>점박이 호수는 고농도의 광을을 포함한 호수입니다. 큰 반점은 광물 성분과 계절적 강수량 에 따라 색상이 정해집니다.</p>
+										</div>
+									</div>
+
+									<div class="pagebox2" style="height: 90%; width: 5%;"></div>
+								</div>
+							</div>
+							<div class="pagebox1" style="height: 5%"></div>
+						</div>
+					</article>
+					<!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--* page3 start *--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+					<article>
+						<a name="page3start"></a>
+						<div class="page3">
+							<div class="pagebox1"></div>
+							<div class="pagebox2"></div>
+							<div class="pagebox2" style="width: 80%">
+								<div class="pagebox1">
+									<h1>소개된 장소 분류</h1>
+								</div>
+
+								<!---------- 표 ---------->
+								<table>
+									<th>순서</th>
+									<th>영문 이름</th>
+									<th>한글 이름</th>
+									<th>위치</th>
+									<th>분류</th>
+
+									<tr>
+										<td>1.</td>
+										<td>Darvaza</td>
+										<td>지옥으로 가는 문</td>
+										<td>투르크메니스탄</td>
+										<td>인공, 구덩이</td>
+									</tr>
+									<tr>
+										<td>2.</td>
+										<td>Fly Geyser</td>
+										<td>하늘 간혈천</td>
+										<td>미국</td>
+										<td>자연, 간혈천</td>
+									</tr>
+									<tr>
+										<td>3.</td>
+										<td>Glass beach</td>
+										<td>유리 해변</td>
+										<td>러시아</td>
+										<td>인공, 바다</td>
+									</tr>
+									<tr>
+										<td>4.</td>
+										<td>Grand Canyon</td>
+										<td>대협곡</td>
+										<td>미국</td>
+										<td>자연, 산</td>
+									</tr>
+
+									<tr>
+										<td>5.</td>
+										<td>Grand Prismatic Spring</td>
+										<td>그랜드 프리즈매틱 스프링</td>
+										<td>미국</td>
+										<td>자연, 간혈천</td>
+									</tr>
+									<tr>
+										<td>6.</td>
+										<td>Great Barrier Reef</td>
+										<td>대보초</td>
+										<td>호주</td>
+										<td>자연, 바다</td>
+									</tr>
+									<tr>
+										<td>7.</td>
+										<td>Ha Long Bay</td>
+										<td>하롱만</td>
+										<td>베트남</td>
+										<td>자연, 바다</td>
+									</tr>
+									<tr>
+										<td>8.</td>
+										<td>Hyams Beach</td>
+										<td>하이엄스 해변</td>
+										<td>호주</td>
+										<td>자연, 바다</td>
+									</tr>
+
+									<tr>
+										<td>9.</td>
+										<td>Lake Retba</td>
+										<td>레트바 호수</td>
+										<td>세네갈</td>
+										<td>자연, 호수</td>
+									</tr>
+									<tr>
+										<td>10.</td>
+										<td>Underwater waterfall</td>
+										<td>수중 폭포</td>
+										<td>모리셔스</td>
+										<td>자연, 바다</td>
+									</tr>
+									<tr>
+										<td>11.</td>
+										<td>Richat Structure</td>
+										<td>리차트 구조</td>
+										<td>모리타니</td>
+										<td>자연, 산</td>
+									</tr>
+									<tr>
+										<td>12.</td>
+										<td>Rio Tinto</td>
+										<td>리오 틴토 강</td>
+										<td>스페인</td>
+										<td>인공, 강</td>
+									</tr>
+
+									<tr>
+										<td>13.</td>
+										<td>Roraima</td>
+										<td>호라이마 산</td>
+										<td>브라질</td>
+										<td>자연, 산</td>
+									</tr>
+									<tr>
+										<td>14.</td>
+										<td>Salar de Uyuni</td>
+										<td>유우니 소금 사막</td>
+										<td>볼리비아</td>
+										<td>자연, 호수</td>
+									</tr>
+									<tr>
+										<td>15.</td>
+										<td>Sea sparkle</td>
+										<td>발광 해변</td>
+										<td>다수</td>
+										<td>자연, 바다</td>
+									</tr>
+									<tr>
+										<td>16.</td>
+										<td>Spotted Lake</td>
+										<td>점박이 호수</td>
+										<td>캐나다</td>
+										<td>자연, 호수</td>
+									</tr>
+
+								</table>
+							</div>
+							<div class="pagebox2"></div>
+							<div class="pagebox1"></div>
+						</div>
+					</article>
+				</div>
+			</section>
+			<!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--* foot start *--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+			<footer>
+				<!---------- 맨밑 높이 부족하면 늘릴것 ---------->
+				<div id="pagefoot">
+					<a name="footstart"></a>
+					<div class="pagebox1"></div>
+					<h3 style="margin-left: 100px; margin-bottom: 1px;">웹프로그래밍 101분반</h3>
+					<p style="margin-left: 100px; margin-top: 1px; margin-bottom: 1px">20181556 유성민</p>
+					<p style="margin-left: 100px; margin-top: 1px;">알림 : 본 웹페이지는 1080p 해상도 125% 배율에 최적화되있으며, 다른 실행 환경시 상이한 디자인이 나타날 수 있음</p>
+				</div>
+			</footer>
+
+			<!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--* left side menu start *--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+			<aside>
+				<!---------- 사이드 메뉴, 탑 네비게이션에 버튼 있음 ---------->
+				<div id="sidemenu">
+					<div id="menuback">
+						Close
+					</div>
+					<nav>
+						<!---------- 페이지 내 위치 이동 ---------->
+						<div class="menubox" style="clear: both;">빠른 이동</div>
+						<div class="menubox"> <a href="#mainstart">최상단</a> </div>
+						<div class="menubox"> <a href="#page1start">액자</a> </div>
+						<div class="menubox"> <a href="#page2row1start">첫째줄</a> </div>
+						<div class="menubox"> <a href="#page2row2start">둘째줄</a> </div>
+						<div class="menubox"> <a href="#page2row3start">셋째줄</a> </div>
+						<div class="menubox"> <a href="#page2row4start">넷째줄</a> </div>
+						<div class="menubox"> <a href="#page3start">분류표</a> </div>
+						<div class="menubox"> <a href="#footstart">크래딧</a> </div>
+					</nav>
+				</div>
+			</aside>
+		</div>
+	</body>
+</html>

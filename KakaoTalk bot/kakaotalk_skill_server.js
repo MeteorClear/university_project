@@ -24,30 +24,6 @@ app.use('/api', apiRouter);
 
 /************************************************* 건물 데이터 *************************************************/
 const building = [
-	["building_name", "image_url", "geo_url", "description"],
-	["U-IT관", "https://url.kr/bq2shv", "http://kko.to/6rJgV4i4p", "소프트웨어 융합대학"],
-	["글로벌빌리지", "https://url.kr/dt94r5", "http://kko.to/k6wsV4Wfo", "디지털콘텐츠학부강의실, 방사선,치위생학과, 스포츠센터, 건축설계관, 보건행정학과, 기숙사"],
-	["대학교회", "https://url.kr/khujmc", "http://kko.to/N4X5Vfi4B", "채플과 동아리방"],
-	["국제협력관", "https://url.kr/njchf1", "http://kko.to/tOXN_4WfB", "학생상담센터, 민석교양대학, 부총장실, 동아시아과 강의실"],
-	["어문관", "https://url.kr/njchf1", "http://kko.to/WZWqV4ifp", "중국어학과 일본어학과 영어학과 강의실,CBT실"],
-	["국제관", "https://url.kr/ciq4sd", "http://kko.to/wOtvVfifT", "국제통상물류학부 강의실"],
-	["경영관", "https://url.kr/hq5cgy", "http://kko.to/r7Dd_4Wfp", "글로벌비즈니스대학 강의실"],
-	["미래관", "", "http://kko.to/1xTA_fi4o", ""],
-	["스튜던트플라자", "https://url.kr/svkxg4", "http://kko.to/gC-I_fWfT", "학생취업지원처 / 총학생회 / 동아리방"],
-	["전자정보관", "https://url.kr/1g59ma", "http://kko.to/t4uI_4Wf0", "이공대학"],
-	["산학협력관", "https://url.kr/e7qbwi", "http://kko.to/FSmU_fW4o", "경찰학과, 경호학과"],
-	["문화센터", "https://url.kr/94yhiq", "http://kko.to/shFJVfi4B", "콘서트홀, 부산디지털대학"],
-	["외국어교육원", "", "http://kko.to/1Pk6V4Wf0", "어학원 교학과사무실, 강의실"],
-	["디자인홀", "https://url.kr/azyrd2", "http://kko.to/QrlQVfifo", "디자인대학"],
-	["그린홀", "https://url.kr/xe9ny1", "http://kko.to/QIoL_4ifo", "토목공학, 작업치료학과"],
-	["응용공학관", "https://url.kr/exmalc", "http://kko.to/__sRV4i4j", "신소재공학과, 식품공학과, 화학 실험실, 한-EU국제 협력센터"],
-	["보건의료관", "https://url.kr/o8wvuy", "http://kko.to/ZakR_fWfo", "보건의료계열 학부 강의실, 실험실"],
-	["건설공학관", "https://url.kr/s8a65n", "http://kko.to/-tZDw4WfT", "건축공학과 강의실"],
-	["GSI빌딩", "https://url.kr/w5dvei", "https://goo.gl/maps/Wj5EauGhjaPn5QXf6", "외국인 유학생과 디자인교육을 위한 전용 건물"],
-	["민석스포츠센터", "https://url.kr/hn83xb", "http://kko.to/5Jo4w4ifH", "체육시설, 건강클리닉센터, 레포츠과학부 사무실"],
-	["민석도서관", "https://url.kr/g2ablw", "http://kko.to/rFtawfWfp", "열람실, 자료실, 국제세미나실, 다목적세미나실"],
-	["뉴밀레니엄관", "https://url.kr/csvwyt", "http://kko.to/ZZQtwfifj", "미디어커뮤니케이션학부 강의실, 패션디자인학과강의실, 한중뉴미디어대학, 산학협력단"],
-	["소향아트홀", "https://url.kr/xstprz", "http://kko.to/aZg-6fWfM", ""],
 	["", "", "", ""],
 ];
 

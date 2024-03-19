@@ -36,7 +36,6 @@ The server uses JSON templates compatible with KakaoTalk's chatbot API for its r
 
 The chatbot on KakaoTalk sends user input to the server, which processes this input and returns a formatted response. The chatbot then displays this response to the user in the chat window.
 
-
 ## Dependencies
 
 - **express**: For setting up the server and handling routes.
